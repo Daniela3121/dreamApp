@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#000000">
+
+    <TextView
+        android:id="@+id/respiratory"
+        android:layout_width="257dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="248dp"
+        android:fontFamily="cursive"
+        android:text="What exacly is dreaming?"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/cardio"
+        android:layout_width="257dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="cursive"
+        android:text="What is that person doing in your dream?"
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respiratory" />
+
+    <TextView
+        android:id="@+id/bacterial"
+        android:layout_width="257dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="cursive"
+        android:text="Lucid Dreaming..."
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardio" />
+
+    <TextView
+        android:id="@+id/mental"
+        android:layout_width="257dp"
+        android:layout_height="73dp"
+        android:layout_marginEnd="76dp"
+        android:fontFamily="cursive"
+        android:text="Did you know?..."
+        android:textColor="@android:color/white"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bacterial" />
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="292dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="140dp"
+        android:fontFamily="cursive"
+        android:text="   Dreaming..."
+        android:textColor="@android:color/white"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/respiratory"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="180dp"
+        android:layout_height="138dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/iv2"
+        app:layout_constraintTop_toTopOf="@+id/appTitle"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="164dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/appTitle"
+        tools:srcCompat="@tools:sample/avatars[12]" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
